@@ -61,12 +61,19 @@ body {
 	width: 1px;
 	background: #ce5f31;
 }
+/*h1{
+color:white;
 
+}*/
 /* Jumbotron */
 .jumbotron {
 	border-radius: 0;
+	background-image: url("../images/header-bike.jpg");
+	color:white;
 }
-
+/*.lead{
+	color:white;
+}*/
 /* Headings */
 .heading-underline {
 	position: relative;
