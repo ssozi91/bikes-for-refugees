@@ -5,130 +5,138 @@
  * Lesson: 1,2
  * Class: Scotland 2017
  */
-
 html,
 body {
-	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
-
 .site-footer {
-	margin-top: 4em;
+    margin-top: 4em;
+    background: #00db8b;
 }
-
 .site-footer p {
-	border-top: 1px solid #dccdc6;
-	padding-top: 2em;
-	padding-bottom: 2em;
+    border-top: 1px solid #dccdc6;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
-
 .navbar-brand > img {
-	max-height: 40px;
-	width: auto;
+    max-height: 40px;
+    width: auto;
 }
-
 .navbar-light .navbar-nav .nav-link {
-	color: #292b2c;
-	font-weight: 600;
-	text-transform: uppercase;
+    color: #292b2c;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-
+.display-3, .lead{
+    color:white;
+}
+    
 /* Buttons */
 .btn {
-	border-radius: 0.15em;
+    border-radius: 0.15em;
 }
-
+.btn-primary{
+    background-color: orangered;
+}
+.btn-primary:hover {
+    background-color: green;
+}
 /* Alert */
 .alert {
-	position: relative;
-	margin-top: 2em;
-	margin-bottom: 3em;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	border: 1px solid #dccdc6;
-	border-radius: 0;
-	font-size: 0.85rem;
-	line-height: 1.3em;
-	background: transparent;
-	color: #292b2c;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border: 1px solid #dccdc6;
+    border-radius: 0;
+    font-size: 0.85rem;
+    line-height: 1.3em;
+    background: transparent;
+    color: #292b2c;
 }
-
 .alert:before {
-	content: '';
-	position: absolute;
-	left: -1px;
-	top: 0;
-	height: 100%;
-	width: 1px;
-	background: #ce5f31;
+    content: '';
+    position: absolute;
+    left: -1px;     
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #ce5f31;
 }
-/*h1{
-color:white;
-
-}*/
 /* Jumbotron */
 .jumbotron {
-	border-radius: 0;
-	background-image: url("../images/header-bike.jpg");
-	color:white;
+    border-radius: 0;
+    background-image: url("../images/header-bike.jpg");
 }
-/*.lead{
-	color:white;
-}*/
 /* Headings */
 .heading-underline {
-	position: relative;
-	margin-bottom: 2em;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #dccdc6;
-	font-size: 1rem;
-	font-weight: 600;
-	text-transform: uppercase;
+    position: relative;
+    margin-bottom: 2em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #dccdc6;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-
 .heading-underline:before {
-	content: '';
-	position: absolute;
-	bottom: -1px;
-	left: 0;
-	width: 25%;
-	height: 1px;
-	max-width: 100px;
-	background: #ce5f31;
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 25%;
+    height: 1px;
+    max-width: 100px;
+    background: #ce5f31;
 }
-
 /* Article */
+ .primary-content .articles{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.primary-content .articles .article{
+  flex-basis:350px;
+}
+.sidebar-content .articles{
+  display: flex;
+  flex-direction: column;   
+} 
+.sidebar-content .articles .article{
+    display: flex;
+} 
+.sidebar-content .articles .article a{
+    flex-basis: 50px;
+} 
 .article {
-	margin-bottom: 2em;
+    margin-bottom: 2em;
 }
-
 .article-title {
-	margin-bottom: 0.5em;
-	font-weight: 700;
+    margin-bottom: 0.5em;
+    font-weight: 700;
 }
-
 .article-read-more a {
-	font-size: 0.85em;
-	font-weight: 700;
-	text-decoration: uppercase;
+    font-size: 0.85em;
+    font-weight: 700;
+    text-decoration: uppercase;
 }
-
 .article-read-more a:hover,
 .article-read-more a:focus {
-	text-decoration: none;
+    text-decoration: none;
 }
-
 .article-read-more .fa {
-	margin-right: 0.5em;
-	color: #ce5f31;
+    margin-right: 0.5em;
+    color: #ce5f31;
 }
-
 .article-read-more:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
-
 @media screen and (min-width: 992px) {
-
-	.navbar-brand > img {
-	   max-height: 80px;
-	}
+    .navbar-brand > img {
+       max-height: 80px;
+    }
+}
+.btn-info:hover{
+    background-color: red;
+    
 }
